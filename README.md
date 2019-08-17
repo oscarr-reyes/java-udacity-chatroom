@@ -1,21 +1,21 @@
-# Chat Room
-Complete the chat room application implementation using WebSocket.
+# Chat room Project
+Chat room project for Udacity java nanodegree course
 
-## Background
-WebSocket is a communication protocol that makes it possible to establish a two-way communication channel between a
-server and a client.
+# Requirements
+* Java 1.8
+* Maven
+* Chrome webdriver (For tests)
 
-## Instruction
-### Implement the message model
-Message model is the message payload that will be exchanged between the client and the server. Implement the Message
-class in chat module. Make sure you cover all there basic actions.
-1. ENTER
-2. CHAT
-3. LEAVE
+# How to run
+```shell script
+$ mvn package
+$ java -jar target/chatroom-starter-0.0.1-SNAPSHOT.jar
+```
 
-### Complete WebSocketChatServer
-Implement all TODOs inside WebSocketChatServer follow each method description.
+# Test
+It is required to specified in `src/main/resources/application.yml` the directory for the chromedriver executable in the
+property: `selenium.webdriver`
 
-### Run the application with command
-mvn build; mvn spring-boot:run
-
+```shell script
+$ mvn test
+```
