@@ -1,3 +1,4 @@
 spring:
   thymeleaf:
     cache: false
+selenium.webdriver: /home/oscar/Downloads/chromedriver_linux64/chromedriver
