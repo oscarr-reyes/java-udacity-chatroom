@@ -20,7 +20,7 @@ public class WebSocketChatApplicationTest {
 	public void should_render_login() throws Exception {
 		this.mockMvc.perform(get("/"))
 			.andExpect(status().isOk())
-			.andExpect(view().name("/login"));
+			.andExpect(view().name("login"));
 	}
 
 	@Test

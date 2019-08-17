@@ -25,7 +25,7 @@ public class WebSocketChatApplication {
 	public ModelAndView login(HttpSession session) {
 		session.invalidate();
 
-		return new ModelAndView("/login");
+		return new ModelAndView("login");
 	}
 
 	/**
